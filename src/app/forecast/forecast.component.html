@@ -1,0 +1,36 @@
+<h3>Forecast</h3>
+
+<!--
+<div class="forecast" *ngFor="let forecast of forecasts | async">
+  <span>{{ forecast.timezone }}</span>
+  <span>{{ forecast.current.temp }}</span>
+</div>
+
+-->
+
+<div>
+  <h4><u>Paris, Ontario</u></h4>
+  <div>
+    <p>
+        {{ "Current Temperature: " + temp + " C"}}
+    </p>
+    <p>
+        {{ "Current Weather: " + weatherMain}}
+    </p>
+    <p>
+        {{ "Weather Description: " + weatherDesc}}
+    </p>
+    <p>
+        {{ "Humidity: " + humidity + " %\n"}}
+    </p>
+    <p>
+        {{ "Feels like: " + feels_like + " C \n"}}
+    </p>
+    <p>
+        {{ "Pressure: " + pressure + " \n"}}
+    </p>
+    <p>
+        {{ "Timezone: " + timezone + " \n"}}
+    </p>
+  </div>
+</div>

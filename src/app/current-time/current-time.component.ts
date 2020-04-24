@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-current-time',
   template: `
-    <div>
+    <div id='currentTime'>
       <p id="time">Current time is {{ dateToday | date:'yyyy-MM-dd HH:mm:ss' }}</p>
     </div>
   `,

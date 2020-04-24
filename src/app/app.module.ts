@@ -4,9 +4,12 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { CurrentTimeComponent } from './current-time/current-time.component';
+import { ForecastService } from './forecast.service';
+import { ForecastComponent } from './forecast/forecast.component';
 
 @NgModule({
   imports:  [ 
@@ -15,12 +18,15 @@ import { CurrentTimeComponent } from './current-time/current-time.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: CurrentTimeComponent },
+      { path: 'forecast', component: ForecastComponent },
     ]), ],
   declarations: [ 
     AppComponent, 
     HelloComponent, 
-    CurrentTimeComponent 
+    CurrentTimeComponent, 
+    ForecastComponent 
   ],
-  bootstrap:   [ AppComponent ]
+  bootstrap:   [ AppComponent ],
+  providers: [ForecastService]
 })
 export class AppModule { }
