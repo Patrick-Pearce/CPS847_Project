@@ -6,7 +6,6 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { CurrentTimeComponent } from './current-time/current-time.component';
 import { ForecastService } from './forecast.service';
 import { ForecastComponent } from './forecast/forecast.component';
@@ -17,12 +16,10 @@ import { ForecastComponent } from './forecast/forecast.component';
     HttpClientModule, 
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: CurrentTimeComponent },
-      { path: 'forecast', component: ForecastComponent },
+      { path: '', component: ForecastComponent },
     ]), ],
   declarations: [ 
     AppComponent, 
-    HelloComponent, 
     CurrentTimeComponent, 
     ForecastComponent 
   ],
